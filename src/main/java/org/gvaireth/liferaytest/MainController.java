@@ -13,4 +13,10 @@ public class MainController {
 		return "/start.jsp";
 	}
 
+	@RequestMapping("/foo")
+	public String helloWorld2(Model model) {
+		System.out.println("front controller up");
+		return "/start.jsp";
+	}
+
 }
