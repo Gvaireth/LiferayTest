@@ -23,11 +23,13 @@ public class LiferaytestApplication extends SpringBootServletInitializer impleme
 		return application.sources(applicationClass);
 	}
 
-	// @Override
-	// public void onStartup(ServletContext servletContext) throws
-	// ServletException {
-	// servletContext.setInitParameter("foo", "bar");
-	// }
+	@Override
+	public void onStartup(ServletContext servletContext) throws ServletException {
+		servletContext.setInitParameter("contextparam", "ok");
+		super.onStartup(servletContext);
+		servletContext.setInitParameter("contextparam", "ok");
+
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(LiferaytestApplication.class, args);

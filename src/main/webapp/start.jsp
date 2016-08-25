@@ -9,6 +9,6 @@
 <body>
 jsp load: ok<br>
 model param test: ${status}<br>
-init param test: ${contextparam}
+init param test: ${application.contextparam} | ${contextparam}
 </body>
 </html>
