@@ -9,6 +9,7 @@ public class MainController {
 
 	@RequestMapping("/start")
 	public String helloWorld2(Model model) {
+		model.addAttribute("status", "ok");
 		System.out.println("front controller up");
 		return "/start.jsp";
 	}

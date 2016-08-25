@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Spring Liferay PoC</title>
 </head>
 <body>
-start
+jsp load: ok<br>
+model param test: ${status}<br>
+init param test: ${contextparam}
 </body>
 </html>
