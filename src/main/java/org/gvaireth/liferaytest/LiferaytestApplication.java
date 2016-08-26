@@ -25,9 +25,9 @@ public class LiferaytestApplication extends SpringBootServletInitializer impleme
 
 	@Override
 	public void onStartup(ServletContext servletContext) throws ServletException {
-		servletContext.setInitParameter("contextparam", "ok");
+		servletContext.setInitParameter("initparam", "ok");
+		servletContext.setAttribute("contextattribute", "ok");
 		super.onStartup(servletContext);
-		servletContext.setInitParameter("contextparam", "ok");
 
 	}
 
@@ -39,6 +39,7 @@ public class LiferaytestApplication extends SpringBootServletInitializer impleme
 	@Override
 	public void setServletContext(ServletContext servletContext) {
 		System.out.println("servletContext " + servletContext);
-
+		System.out.println("initparam " + servletContext.getInitParameter("initparam"));
+		System.out.println("contextattribute " + servletContext.getAttribute("contextattribute"));
 	}
 }

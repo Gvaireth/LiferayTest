@@ -7,8 +7,8 @@
 <title>Spring Liferay PoC</title>
 </head>
 <body>
-jsp load: ok<br>
-model param test: ${status}<br>
-init param test: ${application.contextparam} | ${contextparam}
+jsp load: [ ok ]<br>
+model param test: [ ${modelparam} ]<br>
+context param test: [ ${contextattribute} ]
 </body>
 </html>
