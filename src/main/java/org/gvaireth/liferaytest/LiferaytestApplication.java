@@ -27,6 +27,7 @@ public class LiferaytestApplication extends SpringBootServletInitializer impleme
 	public void onStartup(ServletContext servletContext) throws ServletException {
 		servletContext.setInitParameter("initparam", "ok");
 		servletContext.setAttribute("contextattribute", "ok");
+		servletContext.setAttribute("contextConfigLocation", "/WEB-INF/spring-portlet.xml");
 		super.onStartup(servletContext);
 
 	}

@@ -7,6 +7,7 @@
 <title>Spring Liferay PoC</title>
 </head>
 <body>
+Liferay PoC<br><br>
 jsp load: [ ok ]<br>
 model param test: [ ${modelparam} ]<br>
 context param test: [ ${contextattribute} ]
