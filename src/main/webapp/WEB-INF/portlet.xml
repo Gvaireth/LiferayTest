@@ -6,8 +6,13 @@
 /portlet-app_1_0.xsd /opt/SUNWps/dtd/portlet.xsd"
 	version="1.0">
 	<portlet>
+		<portlet-name>helloPortlet</portlet-name>
 		<portlet-class>org.springframework.web.portlet.DispatcherPortlet
 		</portlet-class>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
 		<init-param>
 			<name>contextConfigLocation</name>
 			<value>/WEB-INF/spring-portlet.xml</value>
