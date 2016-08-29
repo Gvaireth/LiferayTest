@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>liferaytest</name>
+	<name>LiferayTest</name>
 	<description>Liferay on Spring proof of concept</description>
 
 	<parent>

@@ -25,9 +25,15 @@ public class LiferaytestApplication extends SpringBootServletInitializer impleme
 
 	@Override
 	public void onStartup(ServletContext servletContext) throws ServletException {
+		// tests
 		servletContext.setInitParameter("initparam", "ok");
 		servletContext.setAttribute("contextattribute", "ok");
+
+		// portlet config
 		servletContext.setAttribute("contextConfigLocation", "/WEB-INF/spring-portlet.xml");
+
+		// servletContext.addListener(PluginContextListenerWrapper.class);
+
 		super.onStartup(servletContext);
 
 	}
